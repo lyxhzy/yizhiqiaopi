@@ -1,0 +1,234 @@
+<!--pages/home/home.wxml-->
+<view class="pyg_home">
+   <navigation-bar >  
+   </navigation-bar>
+</view>    
+<!--tabs组件 -->  
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+    <block wx:if="{{tabs[0].isActive}}">  
+                <!--导航 开始 --> 
+            <view class="cateList">
+              <block wx:for="{{categoryList}}" wx:key="item">  
+                <block wx:for="{{item}}" wx:key="item">  
+                  <view class="cate-info">
+                    <navigator url="{{item.url}}"  open-type="navigate" hover-class="none">
+                      <image src="{{item.src}}" class="cate-image"></image>
+                      <view class="cate-name">{{item.name}}</view>
+                    </navigator>  
+                  </view>
+                </block>
+              </block>
+            </view>
+            <view class="mid">
+                <navigator>  
+                     <image src="{{redList[0].url}}" class="red-img"></image>
+                </navigator>
+            </view>
+            <view class="bottom">
+              <view class="bot_title">侨批专题好课推荐</view>
+              <view class="bot-content" >
+                <!--水客系米该部分-->  
+              <navigator class="xi-nav" open-type="navigate" url="/pages/recom2/recom2">
+                <!--左侧图片-->
+                    <view class="item-img">   
+                        <image src="{{tuijianList[0].img}}"></image>  
+                    </view>
+                <!--右侧文字描述部分-->  
+                    <view class="item-info">
+                      <view class="xi-title">侨批文化话你知</view>
+                      <view class="xi-content">侨批业历史（一）水客系咪该</view>
+                    </view>
+                </navigator>
+                <!--水客的经营部分-->
+            <navigator  class="shui-nav" open-type="navigate" url="/pages/recom3/recom3">
+                <!--左侧图片-->
+                    <view class="item-img"> 
+                        <image src="{{tuijianList[1].img}}"></image>
+                    </view>
+                <!--右侧文字描述部分-->
+                    <view class="item-info">
+                      <view class="shui-title">侨批文化话你知</view>
+                      <view class="shui-content">侨批业历史（二）水客的经营</view>
+                    </view>
+                </navigator>
+                <!--侨批局的经营部分-->
+                <navigator  class="qiao-nav" open-type="navigate" 
+                url="/pages/recom1/recom1">     
+                <!--左侧图片-->
+                    <view class="item-img">    
+                        <image src="{{tuijianList[2].img}}"></image>
+                    </view>
+                <!--右侧文字描述部分-->
+                    <view class="item-info">
+                      <view class="qiao-title">侨批文化话你知</view>
+                      <view class="qiao-content">侨批业历史（三）侨批局的经营</view>
+                    </view>
+                </navigator>  
+              </view>
+            </view>
+    </block>    
+    <block wx:elif="{{tabs[1].isActive}}">  
+      <navigator>
+          <image src="{{jpjcList[0].url}}"   class="jc-img"></image>
+      </navigator> 
+      <view class="jc-index">
+         <view class="in-content"> 
+          <navigator url="/pages/kejian/kejian" open-type="navigate" hover-class="none">
+              <image src="../../icon/kejian.jpg" class="in-img"></image>
+          </navigator >
+          <view class="in-title">交互课件</view>
+         </view>
+         <view class="in-content"> 
+          <navigator url="/pages/yousheng/yousheng" open-type="navigate"   hover-class="none">
+              <image src="../../icon/yousheng.jpg" class="in-img"></image>
+          </navigator >
+          <view class="in-title">有声画册</view>
+         </view>
+         <view class="in-content"> 
+          <navigator url="/pages/juji/juji" open-type="navigate" hover-class="none">
+              <image src="../../icon/juji.jpg" class="in-img"></image>
+          </navigator >
+          <view class="in-title">原创剧集</view>
+         </view>
+         <view class="in-content"> 
+          <navigator url="/pages/map/map" open-type="navigate" hover-class="none">
+              <image src="../../icon/map.jpg" class="in-img"></image>
+          </navigator >
+          <view class="in-title">文化地图</view>  
+         </view>
+         <view class="in-content">   
+          <navigator url="/pages/tisheng/tisheng" open-type="navigate" hover-class="none">
+              <image src="../../icon/tisheng.jpg" class="in-img"></image>
+          </navigator >
+          <view class="in-title">巩固提升</view>
+         </view>
+      </view> 
+      <view class="jc-show">创意剧集排行榜</view>
+      <view class="jc-main">
+          <view  class="ma-con">
+             <navigator  url="{{jiaocaiList[0].url}}" open-type="navigate" hover-class="none">
+                <view class="ma-img1">
+                <image src="{{jiaocaiList[0].src1}}"></image>
+                </view>
+                <view class="ma-img2">  
+                  <image src="{{JuJiList[0].img}}"></image>   
+                </view >
+                <view class="ma-tl">{{jiaocaiList[0].title}}</view>
+             </navigator>      
+          </view>
+          <view  class="ma-con">
+             <navigator  url="{{jiaocaiList[1].url}}" open-type="navigate" hover-class="none">
+                <view class="ma-img1">
+                <image src="{{jiaocaiList[1].src1}}"></image>
+                </view>
+                <view class="ma-img2">  
+                  <image src="{{JuJiList[1].img}}"></image>   
+                </view >
+                <view class="ma-tl">{{jiaocaiList[1].title}}</view>
+             </navigator>      
+          </view>
+          <view  class="ma-con">
+             <navigator  url="{{jiaocaiList[2].url}}" open-type="navigate" hover-class="none">
+                <view class="ma-img1">
+                <image src="{{jiaocaiList[2].src1}}"></image>
+                </view>
+                <view class="ma-img2">  
+                  <image src="{{JuJiList[2].img}}"></image>   
+                </view >
+                <view class="ma-tl">{{jiaocaiList[2].title}}</view>
+             </navigator>      
+          </view>
+      </view>
+    </block>  
+    <block wx:elif="{{tabs[2].isActive}}">
+    <scroll-view>
+    </scroll-view>
+      <navigator>  
+          <image src="{{youjuList[0].url}}"   class="le-img"></image>
+      </navigator>  
+      <view class="le-navi">
+        <view  class="le-na1">  
+          <navigator>
+          <image src="../../icon/youxi.jpg"></image>
+          </navigator>
+          <view class="le-con2">"侨批+"游戏</view>
+        </view>
+        <view  class="le-na2">  
+          <navigator>
+          <image src="../../icon/xinxiang.jpg"></image>
+          </navigator>
+          <view class="le-con1">时光漫游站</view>
+        </view>
+      </view>
+      <view class="le-email">精彩信件推荐</view>
+      <view class="le-recom">
+      <block wx:for="{{imageList}}" wx:key="item">
+         <navigator open-type="navigate" hover-class="other-naviagtor-hover" hover-class="none">  
+           <image src="{{item}}" class="it-image"></image>
+         </navigator>
+      </block>  
+      </view>
+   
+    </block>  
+    <block wx:elif="{{tabs[3].isActive}}">
+      <navigator>    
+          <image src="{{shudanList[0].url}}"   class="book-img"></image>
+      </navigator>  
+      <view class="bk-look">最近浏览</view>
+      <view class="bk-lc">
+        <block wx:for="{{bookList}}" wx:key="item">
+         <navigator open-type="navigate" hover-class="none">  
+           <image src="{{item.src}}" class="bk-image"></image>
+         </navigator>  
+      </block>  
+      </view>
+      <view class="bk-wenxin">文献库</view>
+      <view class="bk-wx">
+        <block wx:for="{{wenxianList}}" wx:key="item">
+         <navigator open-type="navigate" hover-class="none">  
+           <image src="{{item.img}}" class="wx-image"></image>
+         </navigator>  
+      </block>  
+      </view>
+      <view class="bk-dzshu">电子书</view>
+      <view class="bk-dzs">  
+        <navigator open-type="navigate" hover-class="none" url="/pages/dzs1/dzs1">  
+           <image src="{{dianzishuList[0].img}}" class="dzs-image"></image>  
+         </navigator>  
+         <navigator open-type="navigate" hover-class="none" url="/pages/dzs2/dzs2">  
+           <image src="{{dianzishuList[1].img}}" class="dzs-image"></image>  
+         </navigator>  
+         <navigator open-type="navigate" hover-class="none" url="/pages/dzs3/dzs3">  
+           <image src="{{dianzishuList[2].img}}" class="dzs-image"></image>  
+         </navigator>  
+        
+      </view>
+
+    </block>
+    <block wx:elif="{{tabs[4].isActive}}">
+        <navigator>
+           <image src="{{xianxiaList[0].url}}"   class="zm-img"></image>
+        </navigator>
+        <view class="zm-title">热门推荐</view>  
+        <view class="zm-recommend">
+          <!--左侧报名图片-->
+            <view  class="bm-img">
+              <image src="{{baomingList[0].url}}"></image>  
+            </view> 
+          <!--右侧报名内容-->
+            <view class="bm-content">
+              <view>中小学生党史创新实验课程活动志愿者招募</view>
+              <view class="bm-show">
+                <view class="bm-info">
+                  <view>全国</view>  
+                  <view>2022/6</view>
+                </view>
+                <navigator url="/pages/baoming/baoming" open-type="navigate" hover-class="none">
+                  <view class="bm-btn">立即报名</view>
+                 </navigator>
+              </view>  
+            </view> 
+        </view>
+    </block>
+</Tabs>   
+

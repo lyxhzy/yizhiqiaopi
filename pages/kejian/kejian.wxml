@@ -1,0 +1,5 @@
+<!--pages/kejian/kejian.wxml-->
+<block wx:for="{{kejianList}}"  wx:item="item">
+  <web-view src="{{item}}" class="jiaohu"></web-view>  
+</block>
+

@@ -1,0 +1,2 @@
+<!--pages/recom3/recom3.wxml-->
+<web-view src="{{recommendList[2].url}}"></web-view>  

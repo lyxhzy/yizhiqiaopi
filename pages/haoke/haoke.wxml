@@ -1,0 +1,5 @@
+<!--pages/haoke/haoke.wxml-->
+<view>
+  <nav-bar></nav-bar>
+</view>    
+<video src="{{weikeList[0]}}"></video>

@@ -1,0 +1,5 @@
+/* pages/kejian/kejian.wxss */
+web-view{
+  width: 710rpx;
+  height: 400rpx;
+}

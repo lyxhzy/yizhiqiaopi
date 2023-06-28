@@ -1,0 +1,6 @@
+/* pages/haoke/haoke.wxss */
+video{
+  margin-left: 20rpx;
+  margin-top: 35rpx;   
+  width: 720rpx;  
+}

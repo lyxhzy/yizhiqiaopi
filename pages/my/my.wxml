@@ -1,0 +1,143 @@
+<!--pages/my/my.wxml-->
+<view class="pyg_home">
+   <navigation-bar>
+   </navigation-bar>
+</view>
+<view class="me-info">
+   <view>
+   <image src="../../icon/touoxiang.png"  class="image1"></image>
+   </view>
+   <view class="top-info">
+     <view class="na-info">ab~</view>  
+     <view class="le-info">等级lv1</view>  
+   </view>
+   <view>
+      <image src="../../icon/setting.png"  class="image2"></image>
+   </view>
+</view>
+
+<view  class="user-info">
+   <view class="user-main">
+    <view class="history-wrap"> 
+      <navigator>
+       <view class="it-num">3</view>
+       <view class="it-name">讨论</view>
+      </navigator>
+      <navigator>
+       <view class="it-num">3</view>
+       <view class="it-name">关注</view>
+      </navigator>
+      <navigator>
+       <view class="it-num">3</view>
+       <view class="it-name">徽章</view>
+      </navigator>
+    </view>  
+
+    <view class="user-wrap">
+      <view  class="item-info">
+         <view class="item-image1">
+         <image src="../../icon/kecheng.png"></image>
+         </view>
+         <view  class="item-content">我的课程</view>
+         <view  class="item-image2">  
+         <navigator>
+            <image src="../../icon/more.png"></image>
+         </navigator>
+         </view>
+      </view>
+      <view  class="item-info">
+         <view class="item-image1">
+         <image src="../../icon/xuexiao.png"></image>
+         </view>
+         <view  class="item-content">我的学校</view>
+         <view  class="item-image2">  
+         <navigator>
+            <image src="../../icon/more.png"></image>
+         </navigator>
+         </view>
+      </view>
+      <view  class="item-info">
+         <view class="item-image1">
+         <image src="../../icon/huodong.png"></image>
+         </view>
+         <view  class="item-content">我的活动</view>
+         <view  class="item-image2">  
+         <navigator>
+            <image src="../../icon/more.png"></image>
+         </navigator>
+         </view>
+      </view>
+      <view  class="item-info">
+         <view class="item-image1">
+         <image src="../../icon/shoucang.png"></image>
+         </view>
+         <view  class="item-content">我的收藏</view>
+         <view  class="item-image2">  
+         <navigator>
+            <image src="../../icon/more.png"></image>
+         </navigator>
+         </view>
+      </view>
+      <view  class="item-info">
+         <view class="item-image1">
+         <image src="../../icon/pingjia.png"></image>
+         </view>
+         <view  class="item-content">我的评价</view>
+         <view  class="item-image2">  
+         <navigator>
+            <image src="../../icon/more.png"></image>
+         </navigator>
+         </view>
+      </view>
+      <view  class="item-info">
+         <view class="item-image1">
+         <image src="../../icon/dingdan.png"></image>
+         </view>
+         <view  class="item-content">我的订单</view>
+         <view  class="item-image2">  
+         <navigator>
+            <image src="../../icon/more.png"></image>
+         </navigator>
+         </view>
+      </view>
+      <view  class="item-info">
+         <view class="item-image1">
+         <image src="../../icon/tuiguang.png"></image>
+         </view>
+         <view  class="item-content">我的推广</view>
+         <view  class="item-image2">  
+         <navigator>
+            <image src="../../icon/more.png"></image>
+         </navigator>
+         </view>
+      </view>
+      <view  class="item-info">
+         <view class="item-image1">
+         <image src="../../icon/kefu.png"></image>
+         </view>
+         <view  class="item-content">客服中心</view>
+         <view  class="item-image2">  
+         <navigator>
+            <image src="../../icon/more.png"></image>
+         </navigator>
+         </view>
+      </view>
+      <view  class="item-info">
+         <view class="item-image1">  
+         <image src="../../icon/shuoming.png"></image>
+         </view>
+         <view  class="item-content">协议和说明</view>
+         <view  class="item-image2">  
+         <navigator>
+            <image src="../../icon/more.png"></image>
+         </navigator>
+         </view>
+      </view> 
+    </view>
+    <view class="user-back">
+      <navigator >退出账号</navigator>
+    </view>  
+   </view>
+  
+</view>
+

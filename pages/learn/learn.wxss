@@ -1,0 +1,78 @@
+/* pages/learn/learn.wxss */
+
+.course-top{  
+  width:  710rpx;
+  height: 35rpx;
+  display: flex;  
+  margin-left: 25rpx;
+  margin-top: 20rpx;
+  border-radius: 15rpx;   
+}
+.top-title{
+  flex: 2;  
+  margin-left: 20rpx;
+  
+}
+.more-info{  
+  display:flex;  
+  margin-right: 20rpx; 
+}
+.top-more{
+  flex:1;
+  font-size:24rpx;  
+}
+.more-img{
+  height: 20rpx;  
+  width: 20rpx;
+}
+
+.course-manage{
+  margin-top: 0rpx;
+  width: 710rpx;
+  border-radius: 30rpx;
+  height: 150rpx;
+  background-color: #ffffff;
+  padding-left:  220rpx;     
+  padding-top: 60rpx;    
+  margin: 20rpx;  
+}  
+.manage-content{
+  font-size: 30rpx;  
+}
+.course{
+  width: 660rpx;
+  margin: 25rpx;
+  font-weight: bold;
+
+}
+
+.bot-content{
+  background-color: #ffffff;
+  border-radius: 30rpx; 
+  width: 720rpx;
+  height: 450rpx;     
+  margin: 20rpx;  
+}
+.xi-nav,.shui-nav,.qiao-nav{
+  display:flex;  
+  margin-top: 22rpx;
+}
+
+.item-img{
+  flex: 2;  
+  display:flex;
+  justify-content: center;
+  align-items: center; 
+}
+.item-info{
+  flex: 3;
+  font-size: 27rpx;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+}
+.item-img image{
+  width: 210rpx;  
+  height: 110rpx; 
+}
+
+

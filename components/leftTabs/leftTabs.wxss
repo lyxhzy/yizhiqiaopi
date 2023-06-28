@@ -1,0 +1,31 @@
+/* components/leftTabs/leftTabs.wxss */
+.tabs{
+  display: flex;
+  height: calc(100vh-270rpx);
+}
+.tabs_title{
+  width: 170rpx;
+  padding: 40rpx 0rpx;  
+  height: 1500rpx;
+  background-color: #ffffff;       
+}
+.tabs-content{  
+  height: 100%;
+}
+.title_item{ 
+  display: flex;
+  width: 170rpx;
+  height: 120rpx;
+  text-align: center;
+  margin-top: 10rpx;  
+  font-size: 30rpx;  
+  justify-content: center;
+  align-items: center;  
+  
+}
+
+.active{ 
+  background-color: #edecec;   
+  font-size:  30rpx;  
+  border-right: 5rpx solid #D19275;
+}

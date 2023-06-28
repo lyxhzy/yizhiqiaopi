@@ -1,0 +1,19 @@
+/* components/Tabs/Tans.wxss */
+.tabs_title{
+  top:0;
+  display: flex;
+  padding: 15rpx 0;  
+  background-color: #fbf0f0;       
+}
+.title_item{    
+  font-size: 24rpx;  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex: 1;
+}
+
+.active{  
+  font-size:  30rpx;  
+  border-bottom: 5rpx solid #D19275;
+}

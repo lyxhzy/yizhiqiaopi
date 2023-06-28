@@ -1,0 +1,2 @@
+<!--pages/baoming/baoming.wxml-->
+<web-view src="{{zhaomuList[0]}}"></web-view>  

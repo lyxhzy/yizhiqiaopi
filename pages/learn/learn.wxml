@@ -1,0 +1,67 @@
+<!--pages/learn/learn.wxml-->
+<view class="pyg_home">
+   <navigation-bar>
+   </navigation-bar>
+</view>
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+    <block wx:if="{{tabs[0].isActive}}">
+       <view class="tp">
+         <view  class="course-top">
+            <view  class="top-title">今日已学</view>
+            <view class="more-info">  
+               <view class="top-more">学习日历</view>
+               <navigator>
+                     <image src="../../icon/more.png" class="more-img"></image>
+               </navigator>
+            </view>     
+         </view>
+         <view  class="course-manage">     
+            <view class="manage-content">暂无课程安排~</view>
+         </view>
+       </view>
+       <view class="course">课程（3）</view>
+       <view class="bot-content">
+         <!--水客系米该部分-->
+         <navigator  class="xi-nav">
+         <!--左侧图片-->
+            <view class="item-img"> 
+               <image src="{{tuijianList[0].img}}"></image>
+            </view>
+         <!--右侧文字描述部分-->
+            <view class="item-info">
+               <view class="xi-title">侨批文化话你知</view>
+               <view class="xi-content">侨批业历史（一）水客系咪该</view>
+            </view>  
+         </navigator>
+         <!--水客的经营部分-->
+         <navigator  class="shui-nav">
+         <!--左侧图片-->
+            <view class="item-img"> 
+               <image src="{{tuijianList[1].img}}"></image>
+            </view>
+         <!--右侧文字描述部分-->
+            <view class="item-info">
+               <view class="shui-title">侨批文化话你知</view>
+               <view class="shui-content">侨批业历史（二）水客的经营</view>
+            </view>
+         </navigator>
+         <!--侨批局的经营部分-->
+         <navigator  class="qiao-nav">
+         <!--左侧图片-->
+            <view class="item-img">  
+               <image src="{{tuijianList[2].img}}"></image>
+            </view>
+         <!--右侧文字描述部分-->
+            <view class="item-info">
+               <view class="qiao-title">侨批文化话你知</view>
+               <view class="qiao-content">侨批业历史（三）侨批局的经营</view>
+            </view>
+         </navigator>    
+      </view>
+
+    </block>  
+    <block wx:elif="{{tabs[1].isActive}}">3</block>    
+    <block wx:elif="{{tabs[2].isActive}}">4</block>
+</Tabs>   
+
+

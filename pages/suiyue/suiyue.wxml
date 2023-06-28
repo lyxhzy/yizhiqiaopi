@@ -1,0 +1,7 @@
+<!--pages/suiyue/suiyue.wxml-->
+<view>
+  <nav-bar></nav-bar>
+</view>
+<view  class="item-main" wx:for="{{suiyueList}}" wx:key="item">  
+   <image src="{{item}}"></image>  
+</view>  

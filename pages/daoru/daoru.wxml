@@ -1,0 +1,7 @@
+<!--pages/daoru/daoru.wxml-->
+<view>
+  <nav-bar></nav-bar>
+</view>
+<view  class="item-main" wx:for="{{daoruList}}" wx:key="item">
+   <image src="{{item}}"></image>  
+</view>  

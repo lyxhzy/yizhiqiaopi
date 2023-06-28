@@ -1,0 +1,38 @@
+/* pages/store/store.wxss */
+page{
+  height: 100%;
+}
+.shiji{
+  width: 710rpx;
+  height: 270rpx;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  border-radius: 25rpx; 
+}
+.store-container{   
+  display:flex;      
+  height: calc(100vh-270rpx); 
+}
+
+.goods-show{
+  margin: 20rpx 25rpx;
+  width: 480rpx;
+  display:flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-items: center; 
+  text-align: center;  
+}
+.goods-item{
+  margin: 10rpx;
+}
+.goods-item image{
+  width: 220rpx;
+  height: 220rpx; 
+}
+.goods-des{
+  margin-top:10rpx;
+  font-size: 25rpx;   
+}
+
+

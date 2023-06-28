@@ -1,0 +1,15 @@
+/* pages/jiafeng/jiafeng.wxss */
+.item-main{
+  background-color: #ffffff;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  border-radius: 25rpx;  
+  width: 720rpx; 
+}
+.item-main image{
+  margin-top: 30rpx; 
+  margin-left: 30rpx;
+  border-radius: 25rpx;
+  width: 660rpx;
+  height: 9000rpx;  
+}

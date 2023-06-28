@@ -1,0 +1,8 @@
+<!--components/nav-bar/nav-bar.wxml-->
+<view class="nav-bar" style="height:{{navBarHeight}}px;">
+   <view class="ba-img" bindtap="back">  
+      <image src="../../icon/back.png"  ></image>      
+   </view>
+   <view class="ba-text">侨批岛</view>  
+</view>  
+<view class="content" style="margin-top:{{navBarHeight}}px;"></view>  

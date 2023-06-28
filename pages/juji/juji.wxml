@@ -1,0 +1,7 @@
+<!--pages/juji/juji.wxml-->
+<view>
+  <nav-bar></nav-bar>
+</view>
+<view  class="item-main" wx:for="{{jujiList}}" wx:key="item">
+   <image src="{{item}}"></image>  
+</view>  

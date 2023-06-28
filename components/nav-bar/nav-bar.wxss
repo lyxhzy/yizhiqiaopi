@@ -1,0 +1,23 @@
+/* components/nav-bar/nav-bar.wxss */
+.nav-bar{
+  align-items: center;  
+  display: flex;  
+  position: fixed; 
+  width: 100%; 
+  top: 0;
+  color:#fff; 
+  background: #D19275;  
+  padding: 10rpx;  
+}
+.ba-img  image{    
+  width: 45rpx;
+  height: 45rpx;  
+  margin-top: 20rpx;
+  margin-left: 20rpx; 
+}
+.ba-text{
+  font-size: 35rpx;
+  font-weight: bold;
+  margin-left: 18rpx; 
+  margin-top: 17rpx; 
+}

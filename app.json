@@ -1,0 +1,83 @@
+{
+  "pages": [
+    "pages/store/store",
+    "pages/circle/circle",
+    "pages/home/home",
+    "pages/my/my",
+    "pages/learn/learn",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/daoru/daoru",
+    "pages/suiyue/suiyue",
+    "pages/wenhua/wenhua",
+    "pages/dangshi/dangshi",
+    "pages/jiafeng/jiafeng",
+    "pages/jiaocai/jiaocai",
+    "pages/haoke/haoke",
+    "pages/more/more",
+    "pages/huace/huace",
+    "pages/share/share",
+    "pages/daka/daka",
+    "pages/zhaomu/zhaomu",
+    "pages/kejian/kejian",
+    "pages/yousheng/yousheng",
+    "pages/juji/juji",
+    "pages/map/map",
+    "pages/tisheng/tisheng",
+    "pages/aiguo/aiguo",
+    "pages/jiafengpian/jiafengpian",
+    "pages/qiaopi/qiaopi",
+    "pages/baoming/baoming",
+    "pages/recom1/recom1",
+    "pages/recom2/recom2",
+    "pages/recom3/recom3",
+    "components/leftTabs/leftTabs",
+    "pages/dzs1/dzs1",
+    "pages/dzs2/dzs2",
+    "pages/dzs3/dzs3"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#cd741f",
+    "navigationBarTitleText": " ",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "icon/_home.jpg",
+        "selectedIconPath": "icon/home.jpg"
+      },
+      {
+        "pagePath": "pages/learn/learn",
+        "text": "学习",
+        "iconPath": "icon/_learn.jpg",
+        "selectedIconPath": "icon/learn.jpg"
+      },
+      {
+        "pagePath": "pages/circle/circle",
+        "text": "圈子",
+        "iconPath": "icon/_circle.jpg",
+        "selectedIconPath": "icon/circle.jpg"
+      },
+      {
+        "pagePath": "pages/store/store",
+        "text": "商城",
+        "iconPath": "icon/_store.jpg",
+        "selectedIconPath": "icon/store.jpg"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icon/_my.jpg",
+        "selectedIconPath": "icon/my.jpg"
+      }
+    ],
+    "selectedColor": "#D19275"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
